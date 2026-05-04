@@ -4,11 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Utsav Bread Kota | Bread, Pav, Rusk Manufacturer</title>
+<title>Utsav Bread Kota | Fresh Bread, Pav, Rusk</title>
 
-<meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk & Sweet Bun. Direct supply, best price.">
-
-<link rel="icon" href="logo.png">
+<meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk. स्वाद और सेहत का उत्सव.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -16,7 +14,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #fff5ec, #ffe6d1);
+    background: #fff5ec;
     text-align: center;
 }
 
@@ -27,7 +25,7 @@ header {
     padding: 25px;
 }
 
-/* LOGO BLINK FIXED */
+/* LOGO BLINK (FIXED PROPER) */
 header img {
     height: 75px;
     margin-bottom: 10px;
@@ -35,25 +33,13 @@ header img {
 }
 
 @keyframes blinkStrong {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.3; transform: scale(1.05); }
-    100% { opacity: 1; transform: scale(1); }
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
 }
 
 .tagline {
     font-size: 15px;
-}
-
-.hero-line {
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-/* TOP IMAGE */
-.top-img img {
-    width: 90%;
-    border-radius: 15px;
-    margin: 20px 0;
 }
 
 /* BOX */
@@ -78,13 +64,11 @@ header img {
     border: 1px solid #f1e0d6;
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
 
 .product:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
 }
 
 .product img {
@@ -92,8 +76,9 @@ header img {
     border-radius: 10px;
 }
 
+/* TEXT */
 .product h3 {
-    margin: 8px 0 0;
+    margin: 0;
     font-size: 15px;
 }
 
@@ -120,112 +105,52 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png">
+    <img src="logo.png" alt="logo">
     <h1>Utsav Bread</h1>
-    <div class="tagline">Fresh • Hygienic • Affordable</div>
-    <div class="hero-line">Daily Fresh • Direct Supply • Best Price</div>
+    <div class="tagline">स्वाद और सेहत का उत्सव</div>
 </header>
 
-<!-- TOP IMAGE -->
-<div class="top-img">
-    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800">
+<div class="box">
+    <h2>हमारे प्रोडक्ट</h2>
+
+    <div class="product-list">
+
+        <!-- SIMPLE CLEAN PLACEHOLDER -->
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Milk Slice Bread</h3><p>MRP: ₹10</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Doodh Malai Bread</h3><p>MRP: ₹30</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Classic Bread</h3><p>MRP: ₹25</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Premium Bread</h3><p>MRP: ₹35</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Brown Bread</h3><p>MRP: ₹50</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Family Special Bread</h3><p>MRP: ₹45</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Sandwich Bread</h3><p>MRP: ₹50</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Super Jumbo Bread</h3><p>MRP: ₹60</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Pav</h3><p>MRP: ₹25</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Premium Rusk</h3><p>MRP: ₹35</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Crisp Bite Rusk</h3><p>MRP: ₹30</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Classic Rusk</h3><p>MRP: ₹25</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Utsav Mini Rusk</h3><p>MRP: ₹15</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200"><h3>Sweet Bun</h3><p>MRP: ₹5</p></div>
+
+    </div>
 </div>
 
 <div class="box">
-<h2>हमारे प्रोडक्ट</h2>
-
-<div class="product-list">
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400">
-<h3>Milk Slice Bread</h3><p>₹10</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=400">
-<h3>Doodh Malai Bread</h3><p>₹30</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400">
-<h3>Classic Bread</h3><p>₹25</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400">
-<h3>Premium Bread</h3><p>₹35</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1603046891726-36bfd957e0bf?w=400">
-<h3>Brown Bread</h3><p>₹50</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400">
-<h3>Family Special</h3><p>₹45</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400">
-<h3>Sandwich Bread</h3><p>₹50</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1514516870926-2060a52f6e7e?w=400">
-<h3>Super Jumbo</h3><p>₹60</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1604908177522-0403f2a0df6b?w=400">
-<h3>Pav</h3><p>₹25</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=400">
-<h3>Premium Rusk</h3><p>₹35</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1505253213348-cd54c1bdf0b6?w=400">
-<h3>Crisp Bite Rusk</h3><p>₹30</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=400">
-<h3>Classic Rusk</h3><p>₹25</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=400">
-<h3>Mini Rusk</h3><p>₹15</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400">
-<h3>Sweet Bun</h3><p>₹5</p>
-</div>
-
-</div>
+    <h2>हमारे बारे में</h2>
+    <p>
+    हम रोज़ ताज़ा ब्रेड बनाते हैं और खुद ही सप्लाई करते हैं।  
+    बीच में कोई mediator नहीं होता, इसलिए आपको बेहतर कीमत मिलती है।
+    </p>
 </div>
 
 <div class="box">
-<h2>Why Choose Us</h2>
-<p>🔥 Daily Fresh Manufacturing</p>
-<p>🚚 Direct Supply (No Middleman)</p>
-<p>💰 Best Price</p>
-<p>🧼 Hygienic Products</p>
-</div>
-
-<div class="box">
-<h2>Contact</h2>
-<p>📞 9660020433</p>
-<p>📞 9828535595</p>
-<p>📍 Kota, Rajasthan</p>
+    <h2>Contact</h2>
+    <p>📞 9660020433</p>
+    <p>📞 9828535595</p>
+    <p>📍 Kota, Rajasthan</p>
 </div>
 
 <footer>
-© Utsav Bread & Bakery Products, Kota
+    © Utsav Bread Kota
 </footer>
 
 </body>
