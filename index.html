@@ -8,36 +8,46 @@
 
 <meta name="description" content="Utsav Bread Kota - ₹5 Sweet Bun, Bread ₹10-60, Premium Rusk ₹10-30, Pav available. स्वाद और सेहत का उत्सव.">
 
-<meta name="keywords" content="Utsav Bread Kota, bread shop Kota, pav, rusk, sweet bun, bakery Kota">
-
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #fff8f0;
     text-align: center;
 }
 
+/* HEADER */
 header {
-    background: #ff7a00;
+    background: linear-gradient(135deg, #ff7a00, #ff4d00);
     color: white;
     padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
+}
+
+header img {
+    height: 70px;
+    margin-bottom: 10px;
 }
 
 .tagline {
-    font-size: 18px;
+    font-size: 16px;
 }
 
+/* BOX DESIGN */
 .box {
     background: white;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
+.box:hover {
+    transform: scale(1.02);
+}
+
+/* BUTTON */
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -48,10 +58,11 @@ header {
     margin-top: 10px;
 }
 
+/* FOOTER */
 footer {
-    background: #333;
+    background: #222;
     color: white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
 }
 </style>
@@ -60,7 +71,8 @@ footer {
 <body>
 
 <header>
-    Utsav Bread
+    <img src="logo.png" alt="Utsav Bread Logo">
+    <h1>Utsav Bread</h1>
     <div class="tagline">स्वाद और सेहत का उत्सव</div>
 </header>
 
@@ -82,10 +94,10 @@ footer {
 
 <div class="box">
     <h2>Contact</h2>
-    <p>📞 9660020433 call or whatsapp </p>
-    <p>📞 9828535595 call or whatsapp </p>
+    <p>📞 9660020433</p>
+    <p>📞 9828535595</p>
+    <a class="btn" href="https://wa.me/919660020433">Order on WhatsApp</a>
     <p>📍 Kota, Rajasthan</p>
-
 </div>
 
 <footer>
@@ -94,6 +106,3 @@ footer {
 
 </body>
 </html>
-<header>
-  <img src="logo.png" alt="Utsav Bread Logo" height="80">
-</header>
