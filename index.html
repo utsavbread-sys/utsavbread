@@ -6,56 +6,91 @@
 
 <title>Utsav Bread Kota | Fresh Bread, Pav, Rusk</title>
 
-<meta name="description" content="Utsav Bread Kota - ₹5 Sweet Bun, Bread ₹10-60, Premium Rusk ₹10-30, Pav available. स्वाद और सेहत का उत्सव.">
+<meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk. स्वाद और सेहत का उत्सव.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #fff8f0;
+    background: #fff5ec;
     text-align: center;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #ff7a00, #ff4d00);
+    background: linear-gradient(135deg, #8b4513, #d2691e);
     color: white;
-    padding: 20px;
+    padding: 25px;
 }
 
+/* LOGO BLINK */
 header img {
-    height: 70px;
+    height: 75px;
     margin-bottom: 10px;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0.6;}
 }
 
 .tagline {
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* BOX DESIGN */
+/* BOX */
 .box {
     background: white;
-    margin: 20px auto;
+    margin: 25px auto;
     padding: 20px;
     border-radius: 15px;
-    max-width: 700px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* PRODUCT GRID */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #f1e0d6;
+    padding: 12px;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
-.box:hover {
-    transform: scale(1.02);
+.product:hover {
+    transform: translateY(-5px);
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+/* IMAGE */
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* TEXT */
+.product h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.product p {
+    margin: 5px 0 0;
+    color: #d2691e;
+    font-weight: bold;
+}
+
+h2 {
+    color: #8b4513;
 }
 
 /* FOOTER */
@@ -77,97 +112,95 @@ footer {
 </header>
 
 <div class="box">
-    <div class="box">
     <h2>हमारे प्रोडक्ट</h2>
 
     <div class="product-list">
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Milk Slice Bread</h3>
             <p>MRP: ₹10</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Doodh Malai Bread</h3>
             <p>MRP: ₹30</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h3>Utsav Classic Bread (Normal)</h3>
+            <img src="https://via.placeholder.com/200">
+            <h3>Utsav Classic Bread</h3>
             <p>MRP: ₹25</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Premium Bread</h3>
             <p>MRP: ₹35</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Brown (Atta) Bread</h3>
             <p>MRP: ₹50</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Family Special Bread</h3>
             <p>MRP: ₹45</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h3>Utsav Superb Sandwich Bread</h3>
+            <img src="https://via.placeholder.com/200">
+            <h3>Utsav Sandwich Bread</h3>
             <p>MRP: ₹50</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Super Jumbo Bread</h3>
             <p>MRP: ₹60</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Pav</h3>
             <p>MRP: ₹25</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Premium Rusk</h3>
             <p>MRP: ₹35</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Crisp Bite Rusk</h3>
             <p>MRP: ₹30</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Utsav Classic Rusk</h3>
             <p>MRP: ₹25</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h3>Utsav Classic Rusk (Mini)</h3>
+            <img src="https://via.placeholder.com/200">
+            <h3>Utsav Mini Rusk</h3>
             <p>MRP: ₹15</p>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
+            <img src="https://via.placeholder.com/200">
             <h3>Sweet Bun</h3>
             <p>MRP: ₹5</p>
         </div>
 
     </div>
-</div>
 </div>
 
 <div class="box">
@@ -182,7 +215,6 @@ footer {
     <h2>Contact</h2>
     <p>📞 9660020433</p>
     <p>📞 9828535595</p>
-    <a class="btn" href="https://wa.me/919660020433">Order on WhatsApp</a>
     <p>📍 Kota, Rajasthan</p>
 </div>
 
