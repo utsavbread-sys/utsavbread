@@ -25,16 +25,17 @@ header {
     padding: 25px;
 }
 
-/* LOGO BLINK */
+/* LOGO BLINK STRONG */
 header img {
     height: 75px;
     margin-bottom: 10px;
-    animation: blink 2s infinite;
+    animation: blinkStrong 1s infinite;
 }
 
-@keyframes blink {
-    0%, 100% {opacity: 1;}
-    50% {opacity: 0.6;}
+@keyframes blinkStrong {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.2; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
 .tagline {
