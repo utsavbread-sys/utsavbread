@@ -4,208 +4,354 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title> Utsav Bread Kota | Fresh Bread, Pav, Rusk Manufacturer</title>
+<title>Utsav Bread Kota | Fresh Bread Manufacturer</title>
 
-<meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk & Bun Manufacturer. Direct Supply, Best Price.">
+<meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk, Pizza Base & Kulcha Manufacturer.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #fff5ec, #ffe6d1);
-    text-align: center;
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#fff5ec,#ffe6d1);
+    text-align:center;
 }
 
 /* HEADER */
-header {
-    background: linear-gradient(135deg, #8b4513, #d2691e);
-    color: white;
-    padding: 25px;
+
+header{
+    background:linear-gradient(135deg,#8b4513,#d2691e);
+    color:white;
+    padding:25px;
 }
 
-/* 🔥 FINAL LOGO BLINK + STRONG WHITE OUTLINE */
-header img {
-    height: 75px;
-    animation: logoGlow 1.2s infinite;
+header img{
+    height:80px;
+    animation:logoGlow 1.5s infinite;
 }
 
-@keyframes logoGlow {
-    0% {
-        opacity: 1;
-        filter:
-            drop-shadow(0 0 3px #fff)
-            drop-shadow(0 0 6px #fff);
-    }
+@keyframes logoGlow{
 
-    50% {
-        opacity: 0.5;
-        filter:
-            drop-shadow(0 0 12px #fff)
-            drop-shadow(0 0 25px #fff)
-            drop-shadow(0 0 40px #fff);
-    }
-
-    100% {
-        opacity: 1;
-        filter:
-            drop-shadow(0 0 3px #fff)
-            drop-shadow(0 0 6px #fff);
-    }
+0%{
+opacity:1;
+filter:
+drop-shadow(0 0 3px #fff)
+drop-shadow(0 0 6px #fff);
 }
 
-h1 { margin: 5px 0; }
+50%{
+opacity:.6;
+filter:
+drop-shadow(0 0 12px #fff)
+drop-shadow(0 0 25px #fff);
+}
 
-.tagline {
-    font-size: 14px;
+100%{
+opacity:1;
+filter:
+drop-shadow(0 0 3px #fff)
+drop-shadow(0 0 6px #fff);
+}
+
+}
+
+h1{
+margin:5px 0;
+font-size:36px;
+}
+
+.tagline{
+font-size:15px;
+margin-top:5px;
+line-height:1.6;
 }
 
 /* CTA */
-.cta {
-    display:inline-block;
-    background:#ff7a00;
-    padding:10px 18px;
-    color:white;
-    border-radius:8px;
-    margin-top:10px;
-    font-weight:bold;
+
+.cta{
+display:inline-block;
+background:#ff7a00;
+padding:10px 18px;
+color:white;
+border-radius:8px;
+margin-top:12px;
+font-weight:bold;
+text-decoration:none;
 }
 
 /* BOX */
-.box {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 900px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+.box{
+background:white;
+margin:20px auto;
+padding:20px;
+border-radius:15px;
+max-width:1100px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* PRODUCTS */
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
-    gap: 15px;
+
+.product-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
 }
 
-.product {
-    padding:10px;
-    border-radius:10px;
-    border:1px solid #eee;
-    transition:0.3s;
+.product{
+padding:12px;
+border-radius:12px;
+border:1px solid #eee;
+transition:.3s;
+background:#fff;
 }
 
-.product:hover {
-    transform: translateY(-5px);
+.product:hover{
+transform:translateY(-6px);
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-.product img {
-    width:100%;
-    border-radius:10px;
+.product img{
+width:100%;
+height:320px;
+object-fit:contain;
+border-radius:10px;
+background:#f8f8f8;
+padding:8px;
 }
 
-.product h3 {
-    font-size:14px;
-    margin:8px 0 0;
+.product h3{
+font-size:17px;
+margin:10px 0 5px;
 }
 
-.product p {
-    color:#d2691e;
-    font-weight:bold;
+.product p{
+color:#d2691e;
+font-weight:bold;
+font-size:18px;
 }
 
-/* WHATSAPP */
-.whatsapp {
-    background:#25D366;
-    padding:12px 18px;
-    color:white;
-    border-radius:8px;
-    display:inline-block;
-    margin-top:10px;
-    font-weight:bold;
+/* FEATURES */
+
+.features p{
+font-size:17px;
+margin:10px 0;
 }
 
 /* FOOTER */
-footer {
-    background:#222;
-    color:white;
-    padding:15px;
+
+footer{
+background:#222;
+color:white;
+padding:18px;
+margin-top:20px;
 }
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+h1{
+font-size:28px;
+}
+
+.product img{
+height:260px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.png" alt="Utsav Bread Logo">
-    <h1>Utsav Bread Kota</h1>
-    <div class="tagline">Fresh • Hygienic • Affordable
-        
-                स्वाद और सेहत का उत्सव </div>
 
-    <a href="tel:9660020433" class="cta">📞 Call Now</a>
+<img src="logo.png" alt="Utsav Bread Logo">
+
+<h1>Utsav Bread Kota</h1>
+
+<div class="tagline">
+Fresh • Hygienic • Affordable <br>
+स्वाद और सेहत का उत्सव
+</div>
+
+<a href="tel:9660020433" class="cta">📞 Call Now</a>
+
 </header>
 
+<!-- PRODUCTS -->
+
 <div class="box">
+
 <h2>हमारे प्रोडक्ट</h2>
 
 <div class="product-list">
 
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Milk Bread</h3><p>₹10</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Doodh Malai Bread</h3><p>₹30</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Classic Bread</h3><p>₹25</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Premium Bread</h3><p>₹35</p></div>
+<!-- SUPERB SANDWICH -->
 
-<div class="product"><img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df"><h3>Brown Bread</h3><p>₹50</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Family Bread</h3><p>₹45</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73"><h3>Sandwich Bread</h3><p>₹50</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Super Jumbo Bread</h3><p>₹60</p></div>
+<div class="product">
+<img src="super sandwich.jpeg" alt="Superb Sandwich Bread">
+<h3>Superb Sandwich Bread</h3>
+<p>₹50</p>
+</div>
 
-<div class="product"><img src="https://images.unsplash.com/photo-1604908176997-431ae5e3c7b3"><h3>Pav</h3><p>₹25</p></div>
+<!-- DOODH MALAI -->
 
-<div class="product"><img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef"><h3>Premium Rusk</h3><p>₹35</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef"><h3>Crisp Bite Rusk</h3><p>₹30</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef"><h3>Classic Rusk</h3><p>₹25</p></div>
-<div class="product"><img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef"><h3>Mini Rusk</h3><p>₹15</p></div>
+<div class="product">
+<img src="Utsav Doodh Malai Bread(1).webp" alt="Doodh Malai Bread">
+<h3>Doodh Malai Bread</h3>
+<p>₹30</p>
+</div>
 
-<div class="product"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec"><h3>Sweet Bun</h3><p>₹5</p></div>
+<!-- BROWN BREAD -->
+
+<div class="product">
+<img src="Brown Bread.jpeg" alt="Brown Bread">
+<h3>High Fibre Brown Bread</h3>
+<p>₹50</p>
+</div>
+
+<!-- FAMILY SPECIAL -->
+
+<div class="product">
+<img src="family special.png" alt="Family Special Bread">
+<h3>Family Special Bread</h3>
+<p>₹45</p>
+</div>
+
+<!-- SUPER JUMBO -->
+
+<div class="product">
+<img src="super jumbo.jpeg" alt="Super Jumbo Bread">
+<h3>Super Jumbo Bread</h3>
+<p>₹60</p>
+</div>
+
+<!-- CLASSIC -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500" alt="">
+<h3>Classic Bread</h3>
+<p>₹25</p>
+</div>
+
+<!-- MILK BREAD -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500" alt="">
+<h3>Milk Bread</h3>
+<p>₹10</p>
+</div>
+
+<!-- PAV -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1604908176997-431ae5e3c7b3?w=500" alt="">
+<h3>Pav</h3>
+<p>₹25</p>
+</div>
+
+<!-- PIZZA BASE -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza Base">
+<h3>Pizza Base</h3>
+<p>₹40</p>
+</div>
+
+<!-- KULCHA -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500" alt="Kulcha">
+<h3>Kulcha</h3>
+<p>₹25</p>
+</div>
+
+<!-- PREMIUM RUSK -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=500" alt="">
+<h3>Premium Rusk</h3>
+<p>₹35</p>
+</div>
+
+<!-- CLASSIC RUSK -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=500" alt="">
+<h3>Classic Rusk</h3>
+<p>₹25</p>
+</div>
+
+<!-- MINI RUSK -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=500" alt="">
+<h3>Mini Rusk</h3>
+<p>₹15</p>
+</div>
+
+<!-- SWEET BUN -->
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500" alt="">
+<h3>Sweet Bun</h3>
+<p>₹5</p>
+</div>
 
 </div>
 </div>
 
-<div class="box">
+<!-- WHY US -->
+
+<div class="box features">
+
 <h2>Why Choose Us</h2>
+
 <p>🔥 Daily Fresh Manufacturing</p>
-<p>🚚 Direct Supply</p>
-<p>💰 Best Price</p>
-<p>🏪 Kirana & Hotel Supply Available</p>
-<p><b>📦 Minimum Order ₹100</b></p>
+<p>🏭 Hygienic Production</p>
+<p>💰 Best Quality & Price</p>
+<p>🏪 Trusted By Local Stores</p>
+<p>🥖 Fresh Bread Everyday</p>
+
 </div>
 
+<!-- CONTACT -->
+
 <div class="box">
-<h2>Order Now</h2>
 
-<a class="whatsapp" 
-href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai">
-📲 WhatsApp Order
-</a>
+<h2>Contact Us</h2>
 
-<p>📞 9660020433 / 9828535595</p>
+<p><b>📞 9660020433</b></p>
+<p><b>📞 9828535595</b></p>
+
 </div>
 
+<!-- LOCATION -->
+
 <div class="box">
+
 <h2>Location</h2>
 
-<iframe 
+<iframe
 src="https://www.google.com/maps?q=Kota%20Rajasthan&output=embed"
-width="100%" height="250" style="border-radius:10px;">
+width="100%"
+height="280"
+style="border:0;border-radius:12px;"
+allowfullscreen=""
+loading="lazy">
 </iframe>
 
 </div>
 
 <footer>
+
 © Utsav Bread Kota | Sri Krishna Foods
+
 </footer>
 
 </body>
