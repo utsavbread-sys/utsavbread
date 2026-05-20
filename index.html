@@ -34,6 +34,15 @@ header{position:relative;background:var(--bd);min-height:100vh;display:flex;flex
 .btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,0.55);}
 .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(245,166,35,0.5);font-size:10px;letter-spacing:2px;text-transform:uppercase;animation:sb 2s ease-in-out infinite;}
 @keyframes sb{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
+
+.datetime-bar{background:var(--bd);border-bottom:1px solid rgba(212,96,10,0.3);padding:8px 20px;display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;}
+.datetime-bar span{color:var(--go);font-size:12px;letter-spacing:1.5px;font-weight:500;}
+.legacy-section{background:var(--cw);padding:72px 20px;text-align:center;}
+.legacy-inner{max-width:700px;margin:0 auto;}
+.legacy-year{font-size:72px;font-family:'Playfair Display',serif;color:var(--am);font-weight:900;line-height:1;margin-bottom:4px;}
+.legacy-year-label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--tm);margin-bottom:28px;font-weight:500;}
+.legacy-text{font-size:15px;color:var(--tm);line-height:1.85;margin-bottom:16px;}
+.legacy-tagline{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--am);font-style:italic;margin-top:24px;}
 .trust{background:var(--am);padding:15px 20px;display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap;}
 .trust-item{color:white;font-size:13px;font-weight:500;display:flex;align-items:center;gap:7px;}
 .sec{padding:72px 20px;text-align:center;}
@@ -88,6 +97,11 @@ footer a{color:var(--wh);text-decoration:none;}
 <body>
 <a class="sticky-wa" href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲</a>
 
+<div class="datetime-bar">
+  <span id="dt-date">📅 --</span>
+  <span id="dt-day">📆 --</span>
+  <span id="dt-time">🕐 --:--:--</span>
+</div>
 <header>
   <div class="hbg"></div>
   <div class="hi">
@@ -228,6 +242,21 @@ footer a{color:var(--wh);text-decoration:none;}
 
 <div class="divider">✦ ✦ ✦</div>
 
+<!-- ══ LEGACY ══ -->
+<section class="legacy-section">
+  <div class="legacy-inner fu">
+    <p class="sec-label">Our Story</p>
+    <div class="legacy-year">50+</div>
+    <p class="legacy-year-label">Years of Legacy</p>
+    <p class="legacy-text">For over 50 years, our family has been deeply involved in Kota's bread industry, supplying some of the region's most trusted brands and building expertise rooted in real experience, not classrooms.</p>
+    <p class="legacy-text">This five-decade legacy of quality, discipline, and commitment forms the foundation on which <strong>Utsav Bread</strong> stands today.</p>
+    <p class="legacy-text">Established in 2024, Utsav Bread Manufacturing began its own production journey, carrying forward the same dedication into every loaf, rusk, and pav — ensuring freshness, hygiene, and consistent quality crafted through years of experience.</p>
+    <p class="legacy-tagline">"We are not just building a brand; we are carrying forward a legacy of trust."</p>
+  </div>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
 <!-- ══ WHY US ══ -->
 <section class="sec sec-dark">
   <p class="sec-label">Why Us</p>
@@ -274,6 +303,20 @@ const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*65);obs.unobserve(e.target);}}); 
 },{threshold:0.08});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+// DateTime updater
+function updateDT(){
+  const now=new Date();
+  const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  document.getElementById('dt-date').textContent='📅 '+now.getDate()+' '+months[now.getMonth()]+' '+now.getFullYear();
+  document.getElementById('dt-day').textContent='📆 '+days[now.getDay()];
+  const h=String(now.getHours()).padStart(2,'0');
+  const m=String(now.getMinutes()).padStart(2,'0');
+  const s=String(now.getSeconds()).padStart(2,'0');
+  document.getElementById('dt-time').textContent='🕐 '+h+':'+m+':'+s;
+}
+updateDT();setInterval(updateDT,1000);
 </script>
 </body>
 </html>
