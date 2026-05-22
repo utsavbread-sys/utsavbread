@@ -305,16 +305,70 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:0.08});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
 
+<style>
+body{
+  cursor:none;
+}
+
+#custom-cursor{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:999999;
+  pointer-events:none;
+  font-size:28px;
+  font-weight:bold;
+  color:#d62828;
+  opacity:0;
+  white-space:nowrap;
+  font-family:Arial,sans-serif;
+  
+  transform:translate(-50%,-50%);
+  transition:
+    transform 0.08s linear,
+    opacity 0.2s ease;
+
+  text-shadow:
+    0 0 8px rgba(255,120,0,0.5),
+    0 2px 8px rgba(0,0,0,0.25);
+
+  animation:bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce{
+  0%,100%{
+    transform:translate(-50%,-50%) scale(1);
+  }
+  50%{
+    transform:translate(-50%,-55%) scale(1.08);
+  }
+}
+</style>
+
+<script>
 // Custom cursor
 const cursor = document.createElement('div');
+
 cursor.id = 'custom-cursor';
-cursor.innerHTML = '🍞 उत्सव ब्रेड ';
+cursor.innerHTML = '🍞 उत्सव ब्रेड';
+
 document.body.appendChild(cursor);
+
 document.addEventListener('mousemove', e => {
-  cursor.style.left = (e.clientX + 14) + 'px';
-  cursor.style.top = (e.clientY + 14) + 'px';
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
   cursor.style.opacity = '1';
 });
+
+// Hide when mouse leaves window
+document.addEventListener('mouseleave', () => {
+  cursor.style.opacity = '0';
+});
+
+document.addEventListener('mouseenter', () => {
+  cursor.style.opacity = '1';
+});
+</script>
 document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
 
 // DateTime updater
