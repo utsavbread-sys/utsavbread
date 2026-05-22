@@ -7,10 +7,25 @@
 <meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk & Pizza Base. Direct Supply, Best Price. Call: 9660020433">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bd:#3b1a08;--am:#d4600a;--go:#f5a623;--cr:#fdf6ed;--cw:#f9ead8;--wh:#e8c98a;--wa:#25D366;--tm:#5a3020;}
+#cursor-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9900;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px rgba(255,153,0,0.7);
+}
+  :root{--bd:#3b1a08;--am:#d4600a;--go:#f5a623;--cr:#fdf6ed;--cw:#f9ead8;--wh:#e8c98a;--wa:#25D366;--tm:#5a3020;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--bd);overflow-x:hidden;}
+body
+  <div id="cursor-text">Utsav Bread</div>
+  {font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--bd);overflow-x:hidden;}
 header{position:relative;background:var(--bd);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;}
 .hbg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 50% 110%,rgba(212,96,10,0.28) 0%,transparent 70%),radial-gradient(ellipse 60% 80% at 80% -20%,rgba(124,58,18,0.2) 0%,transparent 60%),var(--bd);}
 .hbg::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(212,96,10,0.035) 30px,rgba(212,96,10,0.035) 31px);}
@@ -94,6 +109,14 @@ footer a{color:var(--wh);text-decoration:none;}
 @media(max-width:700px){.prod-grid,.prod-grid.g3{grid-template-columns:repeat(2,1fr)!important;}}@media(max-width:600px){.trust{gap:14px;}.prod-grid.g3{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));}}
 </style>
 </head>
+  <script>
+const cursorText = document.getElementById('cursor-text');
+
+window.addEventListener('mousemove', (e) => {
+  cursorText.style.left = e.clientX + 'px';
+  cursorText.style.top = e.clientY + 'px';
+});
+</script>
 <body>
 <a class="sticky-wa" href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲</a>
 
