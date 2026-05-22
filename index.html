@@ -306,16 +306,35 @@ const obs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
 
 // Custom cursor
+<style>
+#custom-cursor{
+  position:fixed;
+  pointer-events:none;
+  z-index:999999;
+  font-size:28px;
+  opacity:0;
+}
+body{
+  cursor:none;
+}
+</style>
+
+<script>
+// Custom cursor
 const cursor = document.createElement('div');
+
 cursor.id = 'custom-cursor';
+
 cursor.innerHTML = '🍞 उत्सव ब्रेड';
+
 document.body.appendChild(cursor);
+
 document.addEventListener('mousemove', e => {
   cursor.style.left = (e.clientX + 14) + 'px';
   cursor.style.top = (e.clientY + 14) + 'px';
   cursor.style.opacity = '1';
 });
-document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+</script>
 
 // DateTime updater
 function updateDT(){
