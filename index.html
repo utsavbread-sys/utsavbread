@@ -3,29 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Utsav Bread Kota | Fresh Bread, Pav, Rusk, Pizza Base, Kulcha </title>
+<title>Utsav Bread Kota | Fresh Bread, Pav, Rusk, Pizza Base</title>
 <meta name="description" content="Utsav Bread Kota - Fresh Bread, Pav, Rusk & Pizza Base. Direct Supply, Best Price. Call: 9660020433">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-#cursor-text {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ff9900;
-  font-family: Arial, sans-serif;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 8px rgba(255,153,0,0.7);
-}
-  :root{--bd:#3b1a08;--am:#d4600a;--go:#f5a623;--cr:#fdf6ed;--cw:#f9ead8;--wh:#e8c98a;--wa:#25D366;--tm:#5a3020;}
+:root{--bd:#3b1a08;--am:#d4600a;--go:#f5a623;--cr:#fdf6ed;--cw:#f9ead8;--wh:#e8c98a;--wa:#25D366;--tm:#5a3020;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body
-  <div id="cursor-text">Utsav Bread</div>
-  {font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--bd);overflow-x:hidden;}
+body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--bd);overflow-x:hidden;}
 header{position:relative;background:var(--bd);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;}
 .hbg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 50% 110%,rgba(212,96,10,0.28) 0%,transparent 70%),radial-gradient(ellipse 60% 80% at 80% -20%,rgba(124,58,18,0.2) 0%,transparent 60%),var(--bd);}
 .hbg::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(212,96,10,0.035) 30px,rgba(212,96,10,0.035) 31px);}
@@ -50,14 +35,15 @@ header{position:relative;background:var(--bd);min-height:100vh;display:flex;flex
 .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(245,166,35,0.5);font-size:10px;letter-spacing:2px;text-transform:uppercase;animation:sb 2s ease-in-out infinite;}
 @keyframes sb{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
 
+#custom-cursor{position:fixed;pointer-events:none;z-index:99999;background:var(--am);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;padding:4px 10px;border-radius:20px;opacity:0;transition:opacity 0.2s;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.2);}
 .datetime-bar{background:var(--bd);border-bottom:1px solid rgba(212,96,10,0.3);padding:8px 20px;display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;}
 .datetime-bar span{color:var(--go);font-size:12px;letter-spacing:1.5px;font-weight:500;}
-.legacy-section{background:var(--cw);padding:72px 20px;text-align:center;}
-.legacy-inner{max-width:700px;margin:0 auto;}
-.legacy-year{font-size:72px;font-family:'Playfair Display',serif;color:var(--am);font-weight:900;line-height:1;margin-bottom:4px;}
-.legacy-year-label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--tm);margin-bottom:28px;font-weight:500;}
-.legacy-text{font-size:15px;color:var(--tm);line-height:1.85;margin-bottom:16px;}
-.legacy-tagline{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--am);font-style:italic;margin-top:24px;}
+.legacy-section{background:var(--cw);padding:48px 20px;text-align:center;}
+.legacy-inner{max-width:600px;margin:0 auto;}
+.legacy-year{font-size:48px;font-family:'Playfair Display',serif;color:var(--am);font-weight:900;line-height:1;margin-bottom:4px;}
+.legacy-year-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--tm);margin-bottom:16px;font-weight:500;}
+.legacy-text{font-size:14px;color:var(--tm);line-height:1.7;margin-bottom:12px;}
+.legacy-tagline{font-family:'Playfair Display',serif;font-size:1rem;color:var(--am);font-style:italic;margin-top:16px;}
 .trust{background:var(--am);padding:15px 20px;display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap;}
 .trust-item{color:white;font-size:13px;font-weight:500;display:flex;align-items:center;gap:7px;}
 .sec{padding:72px 20px;text-align:center;}
@@ -109,14 +95,6 @@ footer a{color:var(--wh);text-decoration:none;}
 @media(max-width:700px){.prod-grid,.prod-grid.g3{grid-template-columns:repeat(2,1fr)!important;}}@media(max-width:600px){.trust{gap:14px;}.prod-grid.g3{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));}}
 </style>
 </head>
-  <script>
-const cursorText = document.getElementById('cursor-text');
-
-window.addEventListener('mousemove', (e) => {
-  cursorText.style.left = e.clientX + 'px';
-  cursorText.style.top = e.clientY + 'px';
-});
-</script>
 <body>
 <a class="sticky-wa" href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲</a>
 
@@ -308,9 +286,9 @@ window.addEventListener('mousemove', (e) => {
 <!-- ══ FOOTER ══ -->
 <footer>
   <p class="f-logo"> Utsav Bread & Bakery Products </p>
-  <p> Manufactured & Marketed By Sri Krishna Foods, Kota Rajasthan</p>
+  <p> Manufactured & Marketed By Sri Krishna Foods · Kota, Rajasthan</p>
   <p><a href="tel:+919660020433">📞 +919660020433</a> &nbsp;|&nbsp; <a href="tel:+919828535595">📞 +919828535595</a></p>
-  <p><a href="https://wa.me/919828535595?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲 WhatsApp Order</a></p>
+  <p><a href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲 WhatsApp Order</a></p>
   <p style="margin-top:16px;font-size:12px;opacity:0.5">&copy; 2025 Utsav Bread. All rights reserved.</p>
 </footer>
 
@@ -326,6 +304,18 @@ const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*65);obs.unobserve(e.target);}}); 
 },{threshold:0.08});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+// Custom cursor
+const cursor = document.createElement('div');
+cursor.id = 'custom-cursor';
+cursor.innerHTML = '🍞 Utsav Bread';
+document.body.appendChild(cursor);
+document.addEventListener('mousemove', e => {
+  cursor.style.left = (e.clientX + 14) + 'px';
+  cursor.style.top = (e.clientY + 14) + 'px';
+  cursor.style.opacity = '1';
+});
+document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
 
 // DateTime updater
 function updateDT(){
