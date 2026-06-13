@@ -133,7 +133,7 @@ footer a{color:var(--wh);text-decoration:none;}
 </script>
 </head>
 <body>
-<a class="sticky-wa" href="https://wa.me/919828535595?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲</a>
+<a class="sticky-wa" href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲</a>
 
 <div class="datetime-bar">
   <span id="dt-date">📅 --</span>
@@ -155,7 +155,7 @@ footer a{color:var(--wh);text-decoration:none;}
     <p class="hero-sub">स्वाद और सेहत का उत्सव</p>
     <p class="hero-tag">Fresh &middot; Hygienic &middot; Affordable</p>
     <div class="cta-row">
-      <a href="tel:9828535595" class="btn-call">📞 Call Now</a>
+      <a href="tel:9660020433" class="btn-call">📞 Call Now</a>
       <a href="https://wa.me/919828535595?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" class="btn-wa" target="_blank">📲 WhatsApp Order</a>
     </div>
   </div>
@@ -168,10 +168,6 @@ footer a{color:var(--wh);text-decoration:none;}
   <div class="trust-item">💰 Best Price</div>
   <div class="trust-item">💰 Available in Wholesale & Retail</div>
   <div class="trust-item"><span style="color:#00833e;font-weight:900;">🟢 100% Pure Vegetarian</span></div>
-  <div class="trust-item">🚫 No Harmful Chemicals</div>
-  <div class="trust-item">🚫 No Preservatives</div>
-  <div class="trust-item">🚫 No Palm Oil</div>
-  
 </div>
 
 <!-- ══ SHOWCASE ══ -->
@@ -353,14 +349,20 @@ footer a{color:var(--wh);text-decoration:none;}
   <p class="f-logo"> Utsav Bread & Bakery Products </p>
   <p> Manufactured & Marketed By Sri Krishna Foods · Kota, Rajasthan</p>
   <p><a href="tel:+919660020433">📞 +919660020433</a> &nbsp;|&nbsp; <a href="tel:+919828535595">📞 +919828535595</a></p>
-  <p><a href="https://wa.me/919828535595?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲 WhatsApp Order</a></p>
-  <p style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid #00833e;border-radius:6px;padding:6px 14px;">
-    <span style="background:#00833e;color:#fff;font-size:10px;font-weight:900;letter-spacing:1px;padding:2px 6px;border-radius:3px;font-family:Arial,sans-serif;">FSSAI</span>
-    <span style="font-size:12px;font-weight:700;color:#00833e;letter-spacing:2px;font-family:Arial,sans-serif;">Lic. No. 12224034000697</span>
-    <span style="width:18px;height:18px;border:2px solid #00833e;border-radius:3px;display:inline-flex;align-items:center;justify-content:center;">
-      <span style="width:10px;height:10px;background:#00833e;border-radius:50%;display:inline-block;"></span>
+  <p><a href="https://wa.me/919660020433?text=Namaste%20Utsav%20Bread,%20mujhe%20order%20karna%20hai" target="_blank">📲 WhatsApp Order</a></p>
+  <p style="margin-top:16px;display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;">
+    <!-- Veg Symbol -->
+    <span style="display:inline-flex;align-items:center;gap:5px;border:2px solid #00833e;padding:4px 8px;border-radius:4px;background:#fff;">
+      <span style="width:14px;height:14px;border:2px solid #00833e;border-radius:2px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="width:7px;height:7px;background:#00833e;border-radius:50%;display:block;"></span>
+      </span>
+      <span style="font-size:11px;font-weight:700;color:#00833e;font-family:Arial,sans-serif;letter-spacing:0.5px;">Pure Vegetarian</span>
     </span>
-    <span style="font-size:11px;font-weight:700;color:#00833e;font-family:Arial,sans-serif;"></span>
+    <!-- FSSAI Badge -->
+    <span style="display:inline-flex;align-items:center;gap:6px;border:2px solid #00833e;padding:4px 10px;border-radius:4px;background:#fff;">
+      <span style="background:#00833e;color:#fff;font-size:9px;font-weight:900;padding:2px 5px;border-radius:2px;font-family:Arial Black,sans-serif;letter-spacing:0.5px;">FSSAI</span>
+      <span style="font-size:11px;font-weight:700;color:#333;font-family:Arial,sans-serif;">Lic. No. <strong style="color:#00833e;letter-spacing:1px;">12224034000697</strong></span>
+    </span>
   </p>
   <p style="margin-top:16px;font-size:12px;opacity:0.5">&copy; 2025 Utsav Bread. All rights reserved.</p>
 </footer>
@@ -377,6 +379,50 @@ const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*65);obs.unobserve(e.target);}}); 
 },{threshold:0.08});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+// Scroll badges
+const badges = [
+  {icon:'🚫', text:'No Preservatives'},
+  {icon:'⚗️', text:'No Harmful Chemicals'},
+  {icon:'🌿', text:'No Palm Oil'}
+];
+const badgeContainer = document.createElement('div');
+badgeContainer.id = 'scroll-badges';
+badgeContainer.style.cssText = 'position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:9999;display:flex;flex-direction:column;gap:10px;pointer-events:none;';
+badges.forEach((b,i) => {
+  const el = document.createElement('div');
+  el.className = 'scroll-badge';
+  el.innerHTML = `<span style="font-size:18px;">${b.icon}</span><span>${b.text}</span>`;
+  el.style.cssText = `display:flex;align-items:center;gap:8px;background:#fff;border:2px solid #00833e;border-radius:0 8px 8px 0;padding:8px 14px 8px 10px;font-size:12px;font-weight:700;color:#00833e;font-family:Arial,sans-serif;box-shadow:2px 2px 8px rgba(0,0,0,0.15);transform:translateX(-110%);transition:transform 0.5s ease ${i*0.15}s;`;
+  badgeContainer.appendChild(el);
+});
+document.body.appendChild(badgeContainer);
+
+let badgeVisible = false;
+let badgeTimer = null;
+
+function showBadges(){
+  if(badgeVisible) return;
+  badgeVisible = true;
+  badgeContainer.querySelectorAll('.scroll-badge').forEach(el => el.style.transform = 'translateX(0)');
+  clearTimeout(badgeTimer);
+  badgeTimer = setTimeout(hideBadges, 4000);
+}
+function hideBadges(){
+  badgeVisible = false;
+  badgeContainer.querySelectorAll('.scroll-badge').forEach((el,i) => {
+    el.style.transition = `transform 0.5s ease ${i*0.1}s`;
+    el.style.transform = 'translateX(-110%)';
+  });
+}
+
+let lastScroll = window.scrollY;
+window.addEventListener('scroll', () => {
+  const curr = window.scrollY;
+  if(curr < 100){ hideBadges(); }
+  else { showBadges(); }
+  lastScroll = curr;
+});
 
 // DateTime updater
 function updateDT(){
